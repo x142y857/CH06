@@ -1,13 +1,9 @@
 fun main(){
-    var beverage = readLine()
-
-//	beverage = null
-
-    if (beverage != null){
-        beverage = beverage.capitalize()
-    }else{
-        println("I can't do that without crashing - beverage was null!")
+    var swordsJuggling: Int? = null
+    val isJugglingProficient = (1..3).shuffled().last() == 3
+    if  (isJugglingProficient){
+        swordsJuggling = 2
     }
-    val beverageServed: String = beverage ?: "Burrered Ale"
-    println(beverageServed)
+    println("你雜耍 $swordsJuggling 把劍!")
+
 }
