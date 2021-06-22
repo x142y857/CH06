@@ -5,6 +5,13 @@ fun main(){
         swordsJuggling = 2
     }
 
+    try {
+        proficiencyCheck(swordsJuggling)
+        swordsJuggling = swordsJuggling!!.plus(1)
+    } catch (e:Exception){
+        println(e)
+    }
+
     proficiencyCheck(swordsJuggling)
     swordsJuggling = swordsJuggling!!.plus(1)
 
