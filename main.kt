@@ -1,5 +1,5 @@
 fun main(){
     var beverage = readLine()
-    beverage = null
+//    beverage = null
     println(beverage)
 }
